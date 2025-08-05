@@ -59,7 +59,7 @@ switch (option) {
     case "1":
         var0 = parseInt(prompt("Se calculara el iva de una compra, ingrese el valor del producto, teniendo presente que el precio es antes de iva\n\tIngrese el valor del producto"));
         var1 = parseFloat(prompt("ingrese el porcentage de iva si simbolos"));
-        console.log(`El costo del producto sin iva es ${var0}.\n\tEl iva es de ${var0*}`);
+        console.log(`El costo del producto sin iva es ${var0}.\n\tEl iva es de ${var0*(var1/100)}\n\tEl valor total es ${var0*(1+(var1/100))}`);
         break;
     case "2":
         var0=parseFloat(prompt("Se calculara el area de un cuadrado y su perimetro\n\tIngresar el valor de un laso en centimetros"));
